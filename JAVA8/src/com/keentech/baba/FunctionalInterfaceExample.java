@@ -7,6 +7,7 @@ package com.keentech.baba;
  * 4. Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces.
  * 5. Java provides an annotation @FunctionalInterface, which is used to declare an interface as functional interface.
  * 6. A functional interface can extends another interface only when it does not have any abstract method.
+ * 7. Interface vs Abstract Class - Abstract class can have constructor within it but interface doesn't have constructor.
 */
 
 //Functional Interface with just one abstract method.
@@ -17,6 +18,15 @@ interface Talkable1 {
 //Functional Interface with abstract method and other object class methods
 interface Talkable2{
 	void talk(String str);
+	
+	//Default Method in interface
+	default void talkMore(String str) {
+		System.out.println(str + " Talks More");
+	}
+	//Static method in interface
+	static void talkAlways(String str) {
+		System.out.println(str + " Talks Always");
+	}
 	int hashCode();
 	String toString();
 	boolean equals(Object ob);
@@ -31,6 +41,8 @@ public class FunctionalInterfaceExample implements Talkable2 {
 	public static void main(String args[]) {
 		FunctionalInterfaceExample fr = new FunctionalInterfaceExample();
 		fr.talk("Kumar");
+		fr.talkMore("Gopi");
+		Talkable2.talkAlways("Raj");
 	}
 }
 
