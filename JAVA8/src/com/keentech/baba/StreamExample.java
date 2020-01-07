@@ -7,13 +7,12 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /** Stream
- * Java provides a new additional package in Java 8 called java.util.stream. 
- * This package consists of classes, interfaces and enum to allows functional-style operations on the elements. 
+ * Java8 introduced new package java.util.stream. 
 
  * Stream provides following features:
  
-1. Stream does not store elements. It simply conveys elements from a source such as a data structure, 
-	 an array, or an I/O channel, through a pipeline of computational operations.
+1. Stream does not store elements. 
+.  It simply conveys elements from a source such as a data structure, an array through a pipeline of computational operations.
 2. Stream is functional in nature. Operations performed on a stream does not modify it's source. 
 	For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements,
 	rather than removing elements from the source collection.
