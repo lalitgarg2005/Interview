@@ -10,6 +10,12 @@ import java.util.stream.Stream;
  * 		Here, we just write the implementation code
  * 4. Java lambda expression is treated as a function, so compiler does not create .class file.
  */
+/**
+. Lambda expressions - are anonymous functions. 
+. used to implement the abstract method in functional interface.
+. Mostly used to functions that is executed once. 
+. Can be passed as parameter in another function or can be returned from another function.
+*/
 
 interface Addable {
 	public int sum(int a, int b);
