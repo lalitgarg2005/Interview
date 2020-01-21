@@ -6,14 +6,11 @@ import java.util.stream.Stream;
 /** Lamba Expression - 
  * 1. It provides a clear and concise way to provide the implementation of an interface which has functional interface.
  * 2. It is very useful in collection library. It helps to iterate, filter and extract data from collection.
- * 3. It saves a lot of code. In case of lambda expression, we don't need to define the method again for providing the implementation. 
- * 		Here, we just write the implementation code
- * 4. Java lambda expression is treated as a function, so compiler does not create .class file.
+ * 3. Java lambda expression is treated as a function, so compiler does not create .class file.
  */
 /**
 . Lambda expressions - are anonymous functions. 
 . used to implement the abstract method in functional interface.
-. Mostly used to functions that is executed once. 
 . Can be passed as parameter in another function or can be returned from another function.
 */
 
