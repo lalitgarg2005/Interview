@@ -1,0 +1,187 @@
+DS and Algorithm
+Core Java Section
+Rest and Spring
+
+/////////////////////////////////////////
+// 
+RAMAA
+A A A M R
+
+
+//MARA
+asdfa
+--------------------
+
+public Boolean isAnagram(String string1, String string2){
+
+    if(str1.length() != str2.length())
+        return false;
+        
+      {
+         String str1 = string1.sort();
+          String str2 = string2.sort();
+         
+        HashMap<Character, int> charCount1 = new HashMap<Character, int>();
+        HashMap<Character, int> charCount2 = new HashMap<Character, int>();
+
+     for(int i=0; i < str1.length(); i++){
+         if(charCount1.contains(str(i)){
+             charCount1.put(str(i), charCount1.get(str(i));
+         }else{
+             charCount1.put(str(i),1);
+         }
+     } //end of for loop
+     
+     for(int i=0; i < str2.length(); i++){
+         if(charCount2.contains(str(i)){
+             charCount2.put(str(i), charCount2.get(str(i));
+         }else{
+             charCount2.put(str(i),1);
+         }
+     } //end of for loop
+     //Compairing the 2 hash Map
+     for(int i = 0; i < charCount1.size(); i++){
+         if(charCount1.get(i) != charCount2.get(i))
+             return false;
+     }
+     return true;
+}
+
+
+
+
+/*
+
+Question: Given a list: eat, hello, loleh, ate] Group Anagrams Together
+output: {eat, ate}, {hello, loleh}
+    
+    List<String> words=new ArrayList<String>();
+    
+    words.add("Rat");
+    words.add("Car");
+    words.add("Below");
+    words.add("Tast");
+    words.add("Cried");
+    words.add("Study");
+    words.add("Thing");
+    words.add("Chin");
+    words.add("Grab");
+    words.add("Act");
+    words.add("Robed");
+    words.add("Vase");
+    words.add("Glean");
+    words.add("Desserts");
+    words.add("Tar");
+    words.add("Arc");
+    words.add("Elbow");
+    words.add("State");
+    words.add("Cider");
+    words.add("Dusty");
+    words.add("Night");
+    words.add("Inch");
+    words.add("Brag");
+    words.add("Cat");
+    words.add("Bored");
+    words.add("Save");
+    words.add("Angel");
+    words.add("Streseed");
+
+*/
+
+/*
+
+Given a Map with the key and value pairs:
+
+Map< Integer, String> map=new HashMap<Integer, String>();
+
+map.put(101, "Hemendra");
+map.put(99, "Andrew");
+map.put(103, "Anish");
+map.put(18, "Mohan");
+map.put(11, "Christine");
+map.put(109, "Rebeca");
+map.put(111, "David");
+map.put(19, "Rahim");
+map.put(10, "Krishna");
+
+Required to sort the map:
+
+1. On the basis of keys:
+
+[10=Krishna, 11=Christine, 18=Mohan, 19=Rahim, 99=Andrew, 101=Hemendra, 103=Anish, 109=Rebeca, 111=David]
+
+2. On the basis of values:
+
+[99=Andrew, 103=Anish, 11=Christine, 111=David, 101=Hemendra, 10=Krishna, 18=Mohan, 19=Rahim, 109=Rebeca]
+
+*/
+
+map.getKeys().sort()      = 10, 11, 18
+
+HashMap<Integer, String> tempMap = new HashMap<Integer, String>();
+for(int i=0; i< map.size(); i++){
+    tempMap.put(arr[i], map.get(arr[i]));
+}
+
+map.stream().filter((x,y) -> x.value.compareTo(y.key))
+
+Array.sort((x,y) -> x > y)
+
+/////////////////////////////////
+
+test(x > 10)
+
+pre(5)
+
+Predicate
+Function
+Consumer
+Supplier
+
+/*
+
+Question:
+
+I need the mentioned output:
+
+Interface 1 Method
+Interface 2 Method
+
+Do the required changes in the code without changing the names of the methods or by using any other class or interface..
+
+public class MyClass implements I1,I2{
+
+    public static void main(String[] args) {
+
+        
+    }
+
+}
+
+interface I1 {
+
+    default void m() {
+        System.out.println("Interface 1 Method");
+    }
+}
+interface I2{
+
+    default void m() {
+        System.out.println("Interface 2 Method");
+    }
+    
+}
+
+*/
+
+/////////
+
+//How do we access the cookie content? Can you write a controller for that?
+
+@GetMapping
+public String getCookieContent(@PathVariable name Name){
+       return Cookie.get("Name");
+  }
+  
+//How do we access header values? write a controller for that?
+
