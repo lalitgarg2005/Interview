@@ -1,0 +1,37 @@
+Moving DNS from Godaddy to AWS
+1. Route53->Created HostedZone
+2. Godaddy -> Rezoice.org -> Exported zone file
+3. Import in route53 - error happened - used https://www.whatsmydns.net/ to get IP for rezoice.org
+copied the value from Atlanta. 50.63.202.88
+4. Pasted in line 39,40,41 - replaced the 'Parked' with this value.
+5: Ref https://stackoverflow.com/questions/46730304/importing-zone-file-from-godaddy-to-aws-encountered-this-error
+6. Ref: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-to-route-53.html
+7. Domain discount - CJC1OFF30 - working 30%
+
+
+======================
+rezoice.com - dns - forward to https://rezoice.org
+Permanent (301)
+Forward only
+============
+
+rezoice.com - 
+ns29.domaincontrol.com
+ns30.domaincontrol.com
+
+config.php - changed the url to rezoice.com
+
+===========
+1. Have 3 domains. rezoice.com, rezoice.org, rezoice.in
+2. There was an older hosting for rezoice.org and other 2 domains were forwarding to this.
+3. I have taken a new hosting for rezoice.com
+4. I have updated the DB and also uploaded the same files (which were backed up from rezoice.org)
+5. I want all 3 domains should now point to the new hosting and want to delete the older hosting package.
+6. <Issue> : rezoice.com - is giving 404 error
+===========
+SELECT * 
+FROM Request 
+WHERE RequestId = '${#TestCase#requestId}' 
+	AND RequestTypeKey = (SELECT RequestTypeKey 
+					  FROM RequestType 
+					  WHERE RequestType = 'Assess Transfer')

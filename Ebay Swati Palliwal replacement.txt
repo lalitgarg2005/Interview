@@ -1,0 +1,171 @@
+a* Given a set of points as an input and value for k, find the k closest points to the origin. The distance is the Euclidean distance
+ * You can assume that there will always be k points that will satisfy the criteria
+ * 
+ * Eg 1:
+ * Input= [[1,3],[-2,2]] , K=1
+ * Output= [[-2,2]]
+
+
+ Write a program that takes a sorted array as input and then modifies it to remove duplicates and shift the remaining elements to the left.
+ * As the output it returns the number of valid elements in the array
+ * Eg:1
+ * Input = [2,3,4,4,8,8,8,11,11,11]
+ * Modified input = [2,3,4,8,11,0,0,0,0,0]
+ * Output = 5
+
+1. Create a queue using two stacks with generic type. 
+2. And have the class exposed as a library.
+3. Add comments to the class
+4. Think about when a user wants to set max capacity (I had to create a custom excption to handle when capacity is full).
+5. Capture all the errors that a user using your library may try to exploit
+6. What is the diffrence between spring and spring boot (he was so specific about springboot being standalone)
+7. How do you achieve concurrency in java
+8. What are Read and Write Locks (This i was not sure)
+9. How do u start a thread in java
+10. Are you willing to work overtime.
+11. What size of a team do you prefer to work with
+12. If u had 1m requests persecond how can you manage them ( Looking for use of a load balancer)
+13. What is get and post mapping the diffrence( he was looking for idempotent)
+14. How do u scale an SQL database
+
+Find kth biggest number in an array
+count ways in an matrix
+
+
+Remove duplicate from list of car object
+https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/
+https://www.geeksforgeeks.org/merge-k-sorted-arrays/
+https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/
+
+And check valid parentheses
+
+({[]}]
+
+And he asked do you have own project or do you participate open source development
+
+And he also ask me to write method to identify type raw list
+
+Like if it is string concatenate them or it is number calculate the sum otherwise throw error
+
+
+Input: ["hello", "cat", "raw", "tca", "war", "cta"]
+Group anagram words 
+Output:
+[ ["cat","tca","cta"],["raw","war"],["hello"]] , 
+ArrayList Vs LinkedList, How does HashMap work?, 
+How does hashmap.get work?
+How do you test it using the above code using JUnit, Can you test any other test things in you're code(above code). 
+what collections have u used before, 
+what's you're role in the current job.
+
+
+What is the difference between stack and queues
+
+Can you implement a Queue using stacks
+
+What are rest apis
+
+have you worked on rest apis
+
+Remove duplicates duplicates from a list of objects Car
+You are expected to create the Car class such that it can handle your operations
+What I did, created the class overriding the equals and hashcode methods
+How does string concat work 
+what is the advantage of Stringbuilder or StringBuffer over string
+How does hashset use equals and hashcode methods
+How can you create your own exception
+sum all digits in a String 
+Given a list: eat, hello, loleh, ate] Group Anagrams Together
+output: {eat, ate}, {hello}, {loleh}
+
+Given an String find the pattern and print the next character of the pattern if no pattern is present print
+exception
+"ababac" - > Exception 
+"ababab" --> a
+"abcab" --> c
+"aaaaa" --> a
+
+
+Using queue to implement stack and use stack to implement queue, 
+Print pair of numbers that sum upto a third number in an array. 
+Print all the nodes at certain level in an Binary Tree
+merge Two  sorted Arrays,
+find Second Highest Value in array 
+Given an Binary tree find max for every level, 
+https://www.geeksforgeeks.org/stock-buy-sell/
+First unique character in the given string 
+
+Q: Spring Dependency Injection types and Scopes?
+
+Q: Thread-safe Singleton design pattern?
+
+Q: Factory and Builder design patterns?
+
+Q: Java Generics, why and how. Generic class which takes type argument T, have a method which prints the value of the object?
+
+Q: REST interface for book data store
+Provide HTTP method, URI, payload, Response status code
+Insert book
+get book by id
+Update book by id
+delete book by id
+
+Q: Given an array of integers, return an array of integers which contains
+[1st integer, Sum of next 2 integers (2nd, 3rd), Sum of next 3 integers (4th, 5th, 6th)…]
+
+Input size n
+[1,6,8,5,9,4,7,2]
+Output size m
+[1,14,18,9]
+
+private static List<Integer> summation(int[] arr){
+
+}
+
+For a given array return an array containing the even numbers first then the odd numbers. It should be done in-place, no other data structure is needed.
+[3,2,1,4] ==> [2,4,3,1]
+
+For a given string "abbbcddddeffabbbbbb" return the characters who are consecutively repeated like "bbb" and how many times it appears on the string.
+For example, return a HashMap like,
+b -> 2 Note: (bbb & bbbbbb)
+d -> 1
+f -> 1
+Note: “a” appears two times but it is not consecutively repeated so it is not included. The same is true for “e”.
+
+If you have list of “Person” object, sort them by their “Id”. 
+List<Person> list = new ArrayList<>();
+
+1. Given a string and a character, task is to make a function which count occurrence of the given character in the string.
+2. Second largest element in an array
+3. Create a linkedlist
+4. Select all names that start with a given letter 
+5. Find the Emloyees who hired in the Last 5 days
+6. Maven life cycle
+7. Phases in maven
+8. Why maven plugin
+
+product of an array except itself (leetcode questions)
+given two strings. String1 = "anagram", String2 = "na"
+check if string2 is an anagram of string1
+given the level of a tree. find all the nodes in a tree
+implement queue using 2 stacks
+two sum( leetcode)
+implement rest API
+Find the average of an array, when  the range is given(start and end index is given) in 0(1) time complexity 
+2nd max element in an array
+
+given an array { 1,4,2,6,5,20,8}, written the list of array, whose output is {1,4,5}, {4,2,6}, {2,6,8}, 
+
+that is sum of two integers should present in an array. if it is present written the integers along with the sum
+
+follow up: what if i have duplicate numbers
+
+1. Remove duplicate car objects from a list of car objects (explain hashcode and equals method) 
+2. Write code to validate a string of curly braces, brackets, and parenthesis (use stack) 
+3. Iterate through a list of Objects and print out message of exceptions. 
+4. Given a binary tree return a list of values of the tree level by level, first left to right, then right to left, and continue in a zig zag manner.
+5. Given a binary tree, write code to get the maximum distance between two leaf nodes.
+Stack implementation using Queues.
+finding anagrams from String array
+Spring, Dependency injection, 
+Unit test, Singleton and Builder Design patterns
